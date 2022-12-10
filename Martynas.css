@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.main {
+  margin: 0;
+  padding: 2vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  color: white;
+  font-size: 3vh;
+  min-height: 74vh;
+}
+
+.fonas {
+  background-image: url("images/back.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+}
+
+
+ul, li {
+  text-align: left;
+}
+
+footer{
+  font-size: 2vh;
+}
+
+.content{
+  margin:0;
+  padding:0;
+}
+
+.red {
+  color: #ed4337;
+}

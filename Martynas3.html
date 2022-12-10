@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Martynas Jonkus">
+<meta name="Description" content="SoloLearn example page">
+<meta name="Keywords" content="Solo, learn">
+
+<title>SoloLearn</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<style>
+canvas{
+  border: 10px solid black;
+  display: inline;
+}
+
+@keyframes color {
+    0% {color: red; }
+	25% {color: yellow; }
+    50% {color: green; }
+	75% {color: purple; }
+    100% {color: blue; }
+}
+
+@keyframes bordercolor {
+    0% {border-color: red; }
+	25% {border-color: yellow; }
+    50% {border-color: green; }
+	75% {border-color: purple; }
+    100% {border-color: blue; }
+}
+
+body {
+   width: 100%;
+   text-align:center;
+}
+
+.party1{
+  animation: bordercolor 1s infinite;
+}
+
+.party2{
+  animation: color 1s infinite;
+}
+</style>
+
+</head>
+<body>
+<button id="btn">PARTY!!!</button>
+<h1>SoloLearn pavyzdžiai</h1>
+
+
+<canvas align="center" id="cnvs" width="900" height="500">
+
+<script>
+
+var cnvs=document.getElementById("cnvs");
+var canvas=cnvs.getContext("2d");
+canvas.fillStyle = "black";
+canvas.fillRect(0, 0, cnvs.width, cnvs.height);
+canvas.fillStyle = "white";
+
+for (i = 1; i <= 4; i++){
+  x = 100 * i + 100 * (i-1)
+  canvas.fillRect(x, 100, 100, 100);
+  canvas.fillRect(x, 300, 100, 100);
+};
+
+$("#btn").click(function() {
+  $("canvas").toggleClass("party1");
+  $("h1").toggleClass("party2");
+});
+
+
+ 
+</script>
+</body>
+</html>

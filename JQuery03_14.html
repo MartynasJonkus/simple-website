@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Martynas Jonkus">
+<meta name="Description" content="JQuery">
+<meta name="Keywords" content="JQuery">
+
+<title>Martynas Jonkus JQuery 03.14</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Martynas.css" />
+<script src="Javascript_JQuery.js"></script>
+
+<script>
+$(document).ready(function(){
+  $(".geltona > li").addClass("raudona");
+})
+</script>
+<style>
+  .raudona{
+    color: #ed4337;
+  }
+  
+  .geltona{
+    color: yellow;
+  }
+</style>
+</head>
+<body class="fonas">
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-0 col-md-2"></div>
+    <div class="col-sm-12 col-md-8 content">
+
+      <div class="header">
+        <img src="images/Rust_logo_small.png" class="img-fluid" alt="Rust logo">
+      </div>
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark"></nav>
+      <script>addNavbar()</script>
+  
+      <div class="main w-100">
+        <p class="h4">JQuery</p>
+	
+	<ul class="geltona">
+	  <li>GTX 1060</li>
+	    <ul>
+	      <li>200 Eur</li>
+		  <li>3 GB GDDR5</li>
+		  <li>1506 MHz</li>
+	    </ul>
+      <li>RX 580</li>
+	    <ul>
+	      <li>220 Eur</li>
+		  <li>8 GB GDDR5</li>
+		  <li>1257 MHz</li>
+	    </ul>
+	  <li>GTX 1660</li>
+	    <ul>
+	      <li>250 Eur</li>
+		  <li>6 GB GDDR5</li>
+		  <li>1530 MHz</li>
+	    </ul>
+	  <li>RX 590</li>
+	    <ul>
+	      <li>270 Eur</li>
+		  <li>8 GB GDDR5</li>
+		  <li>1469 MHz</li>
+	    </ul>
+	</ul>
+      </div>
+
+      <footer class="bg-dark text-white">
+        <div class="container-fluid py-2">
+          <div class="row">
+            <div class="col-md-6">Svetainė sukurta Martyno Jonkaus</div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">Susisiekite su manimi:<a href="mailto:martynez00@gmail.com">martynez00@gmail.com</a></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3 text-right small align-self-end"></div>
+          </div>
+        </div>
+      </footer>
+	  
+	</div>
+	<div class="col-sm-0 col-md-2"></div>
+	
+  </div>
+</div>
+
+</body>
+</html>

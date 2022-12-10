@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Martynas Jonkus">
+<meta name="Description" content="Website about the game Rust">
+<meta name="Keywords" content="Rust, game, rust, rst, rut, RUST">
+
+<title>A fan website about Rust</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Martynas.css" />
+<script src="Javascript_JQuery.js"></script>
+
+<script>
+function Res(){
+	document.getElementById("res1").innerHTML = (35*2);
+	document.getElementById("res2").innerHTML = (40*2);
+	document.getElementById("res3").innerHTML = (210*1.25);
+	document.getElementById("res4").innerHTML = (18*1.5);
+}
+</script>
+
+</head>
+<body class="fonas">
+ 
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-0 col-md-2"></div>
+    <div class="col-sm-12 col-md-8 content">
+
+      <div class="header">
+        <img src="images/Rust_logo_small.png" class="img-fluid" alt="Rust logo">
+      </div>
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark"></nav>
+      <script>addNavbar()</script>
+  
+      <div class="main w-100 table-responsive">
+        <h2>9 paskaitos namų darbas</h2>
+	  <table class="table table-dark table-hover" id="table">
+	    <tr class="first">
+			<th>Weapon</th>
+			<th>Damage</th>
+			<th>HS multiplier</th>
+			<th>HS damage</th>
+			<th>DPS</th>
+		</tr>
+	    <tr>
+			<td>Revolver</td>
+			<td>35</td>
+			<td>2</td>
+			<td id="res1"></td>
+			<td>61</td>
+		</tr>
+	    <tr>
+			<td>Semi Automatic Rifle</td>
+			<td>40</td>
+			<td>2</td>
+			<td id="res2"></td>
+			<td>91</td>
+		</tr>
+	    <tr>
+			<td>Double Barrel Shotgun</td>
+			<td>210</td>
+			<td>1.25</td>
+			<td id="res3"></td>
+			<td>70</td>
+		</tr>
+	    <tr>
+			<td>Nailgun</td>
+			<td>18</td>
+			<td>1.5</td>
+			<td id="res4"></td>
+			<td>51</td>
+		</tr>
+	  </table>
+	  
+	  <button type="button" onclick="Res()"> Apskaičiuoti </button>
+	  <p class="red"><i>Daugiau nelabai sugalvojau kaip panaudoti paprastą JavaScript kodą</i></p>
+      </div>
+
+      <footer class="bg-dark text-white">
+        <div class="container-fluid py-2">
+          <div class="row">
+            <div class="col-md-6">Svetainė sukurta Martyno Jonkaus</div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">Susisiekite su manimi:<a href="mailto:martynez00@gmail.com">martynez00@gmail.com</a></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3 text-right small align-self-end"></div>
+          </div>
+        </div>
+      </footer>
+	  
+	</div>
+	<div class="col-sm-0 col-md-2"></div>
+	
+  </div>
+</div>
+
+</body>
+</html>

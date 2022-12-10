@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Martynas Jonkus">
+<meta name="Description" content="Website about the game \"Rust\"">
+<meta name="Keywords" content="Rust, game, rust, rst, rut, RUST">
+
+<title>A fan website about Rust</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Martynas.css" />
+<script src="Javascript_JQuery.js"></script>
+
+<style>
+input{
+	background-color: #ed4337;
+	color: white;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 14px 16px;
+	border: 0;
+}
+</style>
+
+<script>
+function First(){
+	document.getElementById("p").innerHTML = "As a multiplayer-only video game, Rust pits players against each other in a harsh, open world environment with the sole goal of survival. Animals, such as wolves and bears, act as a looming " +
+	  "threat, but the primary danger comes from other players. Most maps are procedurally generated, with the exception of Hapis Island, a pre-built map. Player vs player (PvP) combat is accomplished " +
+	  "with bows, melee weapons and craftable guns. Bullets and other projectiles travel in a ballistic trajectory, rather than being hitscan. There are a number of different types of bullet for each gun, " +
+	  "including high velocity and explosive, thus allowing for more diverse strategy. Hit tracking calculates damage; shots to the head are more damaging than shots to other parts of the body. " +
+	  "The use of weapon attachments, such as holosights, provides an advantage over opponents. To survive, the player must craft tools, build bases, and team with other players. " ;
+}
+
+function Second(){
+	document.getElementById("p").innerHTML = "When beginning, a player only has a rock and a torch. The rock can cut down trees and break apart stones. Cloth and food can be gathered by killing animals; mining provides stone, metal ore " +
+	  "and sulfur ore; and chopping down trees provides wood. To survive in the world, the player must gather resources and use them to craft tools, weapons, and other gear. To craft items, the" +
+	  "player must have a sufficient amount of all required materials, with advanced items needing more obscure components scattered around the map. There are limitations imposed on the amount " +
+	  "of craftable items, with blueprints allowing the creation of more advanced items. An important element in Rust is the airdrop. These are parachute-equipped pallets of supplies delivered " +
+	  "by a prop plane. They can be seen over extremely long distances, sometimes resulting in players running towards the airdrop. There are also other entities that drop advanced loot, including an " +
+	  "attack helicopter and the CH-47 Chinook. These travel to a random zone on the map, attempt to kill players, and then drop a supply crate that opens after a length of time, inviting PvP " +
+	  "interactions. There are player-operable vehicles in Rust. Boats are used to traverse long distances across water and reach valuable loot. Hot air balloons can also be used to explore the map " +
+	  "quickly. Spawning randomly, they can be used once fueled. Unlike the helicopters, balloons can be destroyed by surface-to-air missiles that players can position outside bases. " ;
+}
+
+function Third(){
+	document.getElementById("p").innerHTML = "The player must stay well fed or they will die of starvation. There are other challenges the player must overcome during gameplay, such as drowning, " +
+	"hypothermia, and wildlife attacks—primarily bears and wolves. Specific locales around the map are radioactive. There are four levels of radiation: minor, low, medium, and high. The correct armour " +
+	"or clothing must be worn to enter these areas; failure to do so can result in death. Upon death, a screen with an option to respawn at a random location or at a sleeping bag placed prior appears. " +
+	"Respawning resets the player's inventory to the basic rock and torch. The main concept of Rust is to form a clan. Clans usually create housing for their members, give items and supplies to each " +
+	"other and partake in organised raiding and looting. Safe zones, called Compounds, provide players with a place to trade resources, overlooked by automated high-damage turrets that fire on anyone " +
+	"who draws a weapon, discouraging betrayal. Additionally, these treacherous players will be marked as hostile for a predetermined amount of time." ;
+}
+</script>
+
+</head>
+<body class="fonas">
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-0 col-md-2"></div>
+    <div class="col-sm-12 col-md-8 content">
+
+      <div class="header">
+        <img src="images/Rust_logo_small.png" class="img-fluid" alt="Rust logo">
+      </div>
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark"></nav>
+      <script>addNavbar()</script>
+  
+      <div class="main w-100">
+        <h2>Gameplay</h2>
+	      <p id="p">As a multiplayer-only video game, Rust pits players against each other in a harsh, open world environment with the sole goal of survival. Animals, such as wolves and bears, act as a looming
+	      threat, but the primary danger comes from other players. Most maps are procedurally generated, with the exception of Hapis Island, a pre-built map. Player vs player (PvP) combat is accomplished
+	      with bows, melee weapons and craftable guns. Bullets and other projectiles travel in a ballistic trajectory, rather than being hitscan. There are a number of different types of bullet for each gun,
+	      including high velocity and explosive, thus allowing for more diverse strategy. Hit tracking calculates damage; shots to the head are more damaging than shots to other parts of the body.
+	      The use of weapon attachments, such as holosights, provides an advantage over opponents. To survive, the player must craft tools, build bases, and team with other players.</p>
+	      
+		  <div class="row">
+		    <div class="col-sm-4">
+	          <input class="vienas mx-auto d-block" type="button" value="First page" onclick="First()">
+			</div>
+			<div class="col-sm-4">
+	        <input class="du mx-auto d-block" type="button" value="Second page" onclick="Second()">
+			</div>
+			<div class="col-sm-4">
+	        <input class="trys mx-auto d-block" type="button" value="Third page" onclick="Third()">
+			</div>
+		  </div>
+      </div>
+
+      <footer class="bg-dark text-white">
+        <div class="container-fluid py-2">
+          <div class="row">
+            <div class="col-md-6">Svetainė sukurta Martyno Jonkaus</div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">Susisiekite su manimi:<a href="mailto:martynez00@gmail.com">martynez00@gmail.com</a></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3 text-right small align-self-end"></div>
+          </div>
+        </div>
+      </footer>
+	  
+	</div>
+	<div class="col-sm-0 col-md-2"></div>
+	
+  </div>
+</div>
+ 
+</body>
+</html>
